@@ -1,0 +1,22 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "hasanjahidul"
+  ],
+  "name": "git-context-mcp",
+  "description": "MCP server for semantic git queries. Beyond git log — answer who/what/when/why about any line, file, or branch via blame, co-change, branch hygiene, and PR linkage.",
+  "homeUrl": "https://github.com/HasanJahidul/git-context-mcp",
+  "transport": [
+    "stdio"
+  ],
+  "keywords": [
+    "git",
+    "blame",
+    "co-change",
+    "github",
+    "pull-request",
+    "branch-hygiene",
+    "code-ownership",
+    "developer-tools"
+  ]
+}
