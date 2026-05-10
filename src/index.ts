@@ -15,7 +15,7 @@ import { commitContext } from "./commit-context.js";
 import { getOctokit } from "./github.js";
 
 const server = new Server(
-  { name: "git-context-mcp", version: "0.1.0" },
+  { name: "git-insight-mcp", version: "0.1.0" },
   { capabilities: { tools: {} } }
 );
 

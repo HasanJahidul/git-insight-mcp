@@ -1,10 +1,10 @@
 {
-  "name": "git-context-mcp",
+  "name": "git-insight-mcp",
   "version": "0.1.0",
   "description": "Semantic git queries via MCP. Beyond git log — answer who/what/when/why about any line, file, or branch.",
   "type": "module",
   "bin": {
-    "git-context-mcp": "dist/cli.js"
+    "git-insight-mcp": "dist/cli.js"
   },
   "main": "dist/index.js",
   "files": [
@@ -34,13 +34,13 @@
   ],
   "author": "Jahidul Hasan <contact@hasanjahidul.com>",
   "license": "MIT",
-  "homepage": "https://github.com/HasanJahidul/git-context-mcp#readme",
+  "homepage": "https://github.com/HasanJahidul/git-insight-mcp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HasanJahidul/git-context-mcp.git"
+    "url": "git+https://github.com/HasanJahidul/git-insight-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/HasanJahidul/git-context-mcp/issues"
+    "url": "https://github.com/HasanJahidul/git-insight-mcp/issues"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",

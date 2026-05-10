@@ -65,5 +65,5 @@
   <rect x="358" y="290" width="22" height="14" rx="3" fill="#39d353"/>
 
   <!-- wordmark -->
-  <text x="256" y="460" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#e6edf3" text-anchor="middle">git-context-mcp</text>
+  <text x="256" y="460" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#e6edf3" text-anchor="middle">git-insight-mcp</text>
 </svg>

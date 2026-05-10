@@ -18,13 +18,13 @@ async function main() {
       return;
     case "who-touched": {
       const file = args[1];
-      if (!file) return die("usage: git-context-mcp who-touched <file>");
+      if (!file) return die("usage: git-insight-mcp who-touched <file>");
       console.log(JSON.stringify(await whoTouched({ cwd, file }), null, 2));
       return;
     }
     case "co-change": {
       const file = args[1];
-      if (!file) return die("usage: git-context-mcp co-change <file>");
+      if (!file) return die("usage: git-insight-mcp co-change <file>");
       console.log(JSON.stringify(await coChange({ cwd, file }), null, 2));
       return;
     }
@@ -39,13 +39,13 @@ async function main() {
     }
     case "commit": {
       const sha = args[1];
-      if (!sha) return die("usage: git-context-mcp commit <sha>");
+      if (!sha) return die("usage: git-insight-mcp commit <sha>");
       console.log(JSON.stringify(await commitContext({ cwd, sha }), null, 2));
       return;
     }
     case "intro-pr": {
       const arg = args[1];
-      if (!arg) return die("usage: git-context-mcp intro-pr <sha>  OR  intro-pr <file>:<line>");
+      if (!arg) return die("usage: git-insight-mcp intro-pr <sha>  OR  intro-pr <file>:<line>");
       if (arg.includes(":")) {
         const [file, lineStr] = arg.split(":");
         console.log(JSON.stringify(await introducingPR({ cwd, file, line: parseInt(lineStr, 10) }), null, 2));
@@ -81,10 +81,10 @@ function die(msg: string) {
 }
 
 function help() {
-  console.log(`git-context-mcp — semantic git queries
+  console.log(`git-insight-mcp — semantic git queries
 
 USAGE
-  git-context-mcp [command] [args]
+  git-insight-mcp [command] [args]
 
 COMMANDS
   (none)                  Start MCP stdio server (for Claude/Cursor/etc)
@@ -103,7 +103,7 @@ ENV
   GH_TOKEN | GITHUB_TOKEN  GitHub token for PR/issue lookups (optional but recommended)
 
 INSTALL AS MCP
-  claude mcp add --scope user git-context -- git-context-mcp
+  claude mcp add --scope user git-insight -- git-insight-mcp
 `);
 }
 

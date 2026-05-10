@@ -1,4 +1,4 @@
-# vhs tape — git-context-mcp demo (runs locally on macOS).
+# vhs tape — git-insight-mcp demo (runs locally on macOS).
 # Render: vhs demo.tape  →  demo.gif
 
 Output demo.gif
@@ -12,13 +12,13 @@ Set Padding 14
 Set Framerate 24
 
 # Title
-Type "# git-context-mcp — semantic git queries with Claude"
+Type "# git-insight-mcp — semantic git queries with Claude"
 Sleep 1500ms
 Enter
 Sleep 400ms
 
 # Verify wired
-Type "claude mcp list 2>&1 | grep git-context"
+Type "claude mcp list 2>&1 | grep git-insight"
 Sleep 400ms
 Enter
 Sleep 2500ms
@@ -27,7 +27,7 @@ Sleep 2500ms
 Type "# 1) Who owns src/git.ts?"
 Enter
 Sleep 600ms
-Type `claude --print --permission-mode bypassPermissions "Use git-context who_touched file=src/git.ts. One short line per top author with line count."`
+Type `claude --print --permission-mode bypassPermissions "Use git-insight who_touched file=src/git.ts. One short line per top author with line count."`
 Sleep 400ms
 Enter
 Sleep 14s
@@ -36,7 +36,7 @@ Sleep 14s
 Type "# 2) What did I work on this week?"
 Enter
 Sleep 600ms
-Type `claude --print --permission-mode bypassPermissions "Use git-context recent_work. Two-line summary plus a bullet per commit."`
+Type `claude --print --permission-mode bypassPermissions "Use git-insight recent_work. Two-line summary plus a bullet per commit."`
 Sleep 400ms
 Enter
 Sleep 14s
@@ -45,7 +45,7 @@ Sleep 14s
 Type "# 3) Tell me about the last commit"
 Enter
 Sleep 600ms
-Type `claude --print --permission-mode bypassPermissions "Use git-context commit_context for HEAD. Subject, files changed, insertions/deletions, related issues."`
+Type `claude --print --permission-mode bypassPermissions "Use git-insight commit_context for HEAD. Subject, files changed, insertions/deletions, related issues."`
 Sleep 400ms
 Enter
 Sleep 14s
@@ -54,7 +54,7 @@ Sleep 14s
 Type "# 4) If I edit src/git.ts, what else should I check?"
 Enter
 Sleep 600ms
-Type `claude --print --permission-mode bypassPermissions "Use git-context co_change file=src/git.ts threshold=1 limit=5. Bullet list."`
+Type `claude --print --permission-mode bypassPermissions "Use git-insight co_change file=src/git.ts threshold=1 limit=5. Bullet list."`
 Sleep 400ms
 Enter
 Sleep 12s

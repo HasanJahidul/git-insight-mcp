@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/logo.png" alt="git-context-mcp" width="200" />
+  <img src="assets/logo.png" alt="git-insight-mcp" width="200" />
 </p>
 
-# git-context-mcp
+# git-insight-mcp
 
 Semantic git queries via MCP. Beyond `git log` — answer who/what/when/why about any line, file, or branch.
 
@@ -25,13 +25,13 @@ LLM agents need this context to make safe edits. Currently they `git log -n 5` a
 ## Install
 
 ```bash
-npm install -g git-context-mcp
+npm install -g git-insight-mcp
 ```
 
 Wire into Claude Code:
 
 ```bash
-claude mcp add --scope user git-context -- git-context-mcp
+claude mcp add --scope user git-insight -- git-insight-mcp
 ```
 
 Or any MCP-compatible client. Runs as a stdio MCP server.
@@ -72,21 +72,21 @@ Without a token, the local-git tools still work. PR linkage is skipped.
 ## CLI usage (sanity checks)
 
 ```bash
-git-context-mcp who-touched src/auth.ts
-git-context-mcp co-change src/auth.ts
-git-context-mcp branches
-git-context-mcp recent alice
-git-context-mcp commit a3e577e
-git-context-mcp intro-pr src/auth.ts:42
-git-context-mcp intro-pr a3e577e
-git-context-mcp                # MCP stdio server
+git-insight-mcp who-touched src/auth.ts
+git-insight-mcp co-change src/auth.ts
+git-insight-mcp branches
+git-insight-mcp recent alice
+git-insight-mcp commit a3e577e
+git-insight-mcp intro-pr src/auth.ts:42
+git-insight-mcp intro-pr a3e577e
+git-insight-mcp                # MCP stdio server
 ```
 
 ## Build from source
 
 ```bash
-git clone https://github.com/HasanJahidul/git-context-mcp.git
-cd git-context-mcp
+git clone https://github.com/HasanJahidul/git-insight-mcp.git
+cd git-insight-mcp
 npm install
 npm run build
 node dist/cli.js branches

@@ -3,9 +3,9 @@
   "maintainers": [
     "hasanjahidul"
   ],
-  "name": "git-context-mcp",
+  "name": "git-insight-mcp",
   "description": "MCP server for semantic git queries. Beyond git log — answer who/what/when/why about any line, file, or branch via blame, co-change, branch hygiene, and PR linkage.",
-  "homeUrl": "https://github.com/HasanJahidul/git-context-mcp",
+  "homeUrl": "https://github.com/HasanJahidul/git-insight-mcp",
   "transport": [
     "stdio"
   ],

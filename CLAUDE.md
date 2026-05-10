@@ -1,13 +1,13 @@
-# git-context-mcp — Project Context
+# git-insight-mcp — Project Context
 
-MCP server for semantic git queries. Walks `git` CLI + Octokit. Local + GitHub-aware.
+MCP server for semantic git queries (formerly `git-context-mcp` — npm name was squatted). Walks `git` CLI + Octokit. Local + GitHub-aware.
 Sibling to terminal-history-mcp + localhost-mcp (same author, same TS+npm pattern).
 
 ## Status
 
 - **Version**: 0.1.0 scaffold (initial)
-- **Working dir**: `/Users/jahidulhasan/Documents/research/mcp-servers/git-context-mcp`
-- **Wire**: `claude mcp add --scope user git-context -- git-context-mcp` (after `npm link`)
+- **Working dir**: `/Users/jahidulhasan/Documents/research/mcp-servers/git-insight-mcp`
+- **Wire**: `claude mcp add --scope user git-insight -- git-insight-mcp` (after `npm link`)
 - **GH auth**: `GH_TOKEN` or `GITHUB_TOKEN` env. Without, PR/issue lookups skipped (local-only mode still works).
 
 ## Architecture
