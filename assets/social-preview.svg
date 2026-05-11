@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="branchA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f78166"/>
+      <stop offset="100%" stop-color="#ec6547"/>
+    </linearGradient>
+    <linearGradient id="branchB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a371f7"/>
+      <stop offset="100%" stop-color="#8957e5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- logo, left -->
+  <image xlink:href="logo.svg" x="96" y="100" width="440" height="440"/>
+
+  <!-- text block, right -->
+  <text x="600" y="232" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="22" font-weight="700" letter-spacing="3" fill="#7d8590">MCP SERVER</text>
+  <text x="600" y="312" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="76" font-weight="800" fill="#e6edf3">git-insight-mcp</text>
+  <text x="600" y="372" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#adbac7">Semantic git queries. Who, what, when, why —</text>
+  <text x="600" y="414" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#adbac7">about any line, file, or branch.</text>
+
+  <!-- tool chips -->
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="20" font-weight="600">
+    <rect x="600" y="456" width="166" height="38" rx="8" fill="#21262d" stroke="#30363d"/>
+    <text x="616" y="481" fill="#f78166">who_touched</text>
+    <rect x="780" y="456" width="158" height="38" rx="8" fill="#21262d" stroke="#30363d"/>
+    <text x="796" y="481" fill="#a371f7">co_change</text>
+    <rect x="952" y="456" width="186" height="38" rx="8" fill="#21262d" stroke="#30363d"/>
+    <text x="968" y="481" fill="#39d353">introducing_pr</text>
+  </g>
+
+  <text x="600" y="540" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#7d8590">npm i -g git-insight-mcp  ·  MIT  ·  local git + optional GitHub API</text>
+</svg>
