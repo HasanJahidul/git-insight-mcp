@@ -4,6 +4,11 @@
 
 # git-insight-mcp
 
+[![git-insight-mcp MCP server](https://glama.ai/mcp/servers/HasanJahidul/git-insight-mcp/badges/score.svg)](https://glama.ai/mcp/servers/HasanJahidul/git-insight-mcp)
+[![CI](https://github.com/HasanJahidul/git-insight-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/HasanJahidul/git-insight-mcp/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/git-insight-mcp.svg)](https://www.npmjs.com/package/git-insight-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Semantic git queries via MCP. Beyond `git log` — answer who/what/when/why about any line, file, or branch.
 
 ![demo](demo.gif)
